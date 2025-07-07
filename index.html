@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackjack Card Counter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Blackjack Card Counter</h1>
+
+  <div class="cards">
+    <h2>Select a Card</h2>
+    <div id="card-deck"></div>
+  </div>
+
+  <p id="selection-indicator">Selected Card: <span id="selected-card">None</span></p>
+
+  <div class="hands">
+    <div id="dealer-section" class="hand-section">
+      <h2>Dealer's Hand (click to assign)</h2>
+      <div id="dealer-hand" class="hand"></div>
+    </div>
+    <div id="player-section" class="hand-section">
+      <h2>Player's Hand (click to assign)</h2>
+      <div id="player-hand" class="hand"></div>
+    </div>
+  </div>
+
+  <div id="counter">
+    <p>Running Count: <span id="count">0</span></p>
+    <p>Cards Remaining: <span id="remaining">416</span></p>
+    <p>True Count: <span id="true-count">0.00</span></p>
+  </div>
+
+  <div class="buttons">
+    <button onclick="resetHand()">Reset Hand</button>
+    <button onclick="resetShoe()">Reset Shoe</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
